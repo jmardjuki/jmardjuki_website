@@ -2,11 +2,25 @@ $(document).ready(function() {
     $('#pagepiling').pagepiling({
         menu: '#menu',
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-        sectionsColor: ['#2C3E50', 'white', '#ee005a', '#39C'],
+        sectionsColor: ['#2C3E50', '#39C', '#ee005a', '#39C'],
         navigation: {
             'position': 'right',
-            'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page5']
+            'tooltips': ['TOP↑', 'About Me', 'Projects', 'Gallery', 'Contact Me']
         },
 
     });
+});
+
+$(document).ready(function() {
+    $('.logo_icon').hover(function() {
+            $( this ).fadeOut( 100 );
+            $( this ).fadeIn( 1000 );
+            var valueText = this.id;
+            valueText = '<span id="logo_hoverText">' + valueText + '</span>'
+            $('#logo_hoverText').replaceWith( $(valueText) );
+        }, function() {
+            var valueText = '<span id="logo_hoverText">_______</span>'
+            $('#logo_hoverText').replaceWith( $(valueText) );        
+        }
+    );  
 });

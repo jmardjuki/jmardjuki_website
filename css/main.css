@@ -1,0 +1,16 @@
+/**
+ *	Custom CSS for jmardjuki's website
+ */
+#section1 .intro li {
+	display: inline;
+    margin-right: 3px;
+    margin-top: 6%;
+}
+
+#section1 h3{
+	color: #FFF;
+}
+
+#section1 #logo_text{
+	margin-top: 3%;
+}
