@@ -1,6 +1,8 @@
 /**
  *	Custom CSS for jmardjuki's website
  */
+
+ /* Section 1: TOP */
 #section1 .intro li {
 	display: inline;
     margin-right: 3px;
@@ -13,4 +15,21 @@
 
 #section1 #logo_text{
 	margin-top: 3%;
+}
+
+/* Section 3: Projects */;
+#section3 #project_year_selecion {
+	margin-top: 3%;
+
+}
+#section3 .intro li {
+	display: inline;
+    margin-right: 3px;
+    margin-top: 6%;
+}
+#project_year a{
+	color: green;
+}
+#project_year a:hover{
+	color: black;
 }
