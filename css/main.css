@@ -3,6 +3,12 @@
  */
 
  /* Section 1: TOP */
+#section1{
+	background-image: url(../image/bg/bg1.JPG);
+	background-size: 100% auto;
+	background-repeat:no-repeat;
+}
+
 #section1 .intro li {
 	display: inline;
     margin-right: 3px;
@@ -20,12 +26,37 @@
 /* Section 3: Projects */;
 #section3 #project_year_selecion {
 	margin-top: 3%;
-
+	margin-bottom: 3%;
 }
 #section3 .intro li {
 	display: inline;
     margin-right: 3px;
     margin-top: 6%;
+}
+.project_box {
+	color: green;
+}
+
+.project_box_list {
+	list-style: circle;
+	color: green;
+	margin-left: 3%;
+}
+#project_content_2015{
+    display:-webkit-flex;
+    -webkit-justify-content:center;
+
+    display:flex;
+    justify-content:center;
+
+}
+div.project_inline { 
+    -webkit-flex:1;
+    flex:1;
+    /*border:thin solid #777;*/
+}
+.clearBoth { 
+	clear:both; 
 }
 #project_year a{
 	color: green;

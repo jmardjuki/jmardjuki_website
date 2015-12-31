@@ -6,10 +6,12 @@
     <!-- CSS files -->
     <link rel="stylesheet" type="text/css" href="css/pagepiling/jquery.pagepiling.css" />
     <link rel="stylesheet" type="text/css" href="css/pagepiling/examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/colorbox/colorbox.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- JS files -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/pagepiling/jquery.pagepiling.min.js"></script>
+    <script type="text/javascript" src="js/colorbox/jquery.colorbox-min.js"></script>
 		<script src="js/main.js"></script>
 	</head>
 	<body>
@@ -64,9 +66,9 @@
             Select from the following year:
             <div id ="project_year_selection">
               <ul id="project_year">
-                <!-- Change link to JavaScript void -->
                 <li>
-                  <a class="project_select" href="javascript:void(0)" id="project_sel_2015">2015</a>
+                  <a class="project_select" href="javascript:void(0)" id="project_sel_2015">2015
+                  </a>
                 </li>
                 <li>
                   <a class="project_select" href="javascript:void(0)" id="project_sel_2014">2014</a>
@@ -75,15 +77,89 @@
                   <a class="project_select" href="javascript:void(0)" id="project_sel_2013">2013</a>
                 </li>
               </ul>
+              <br/>
             </div>
             <div id="project_content_2015">
-              Hi
-            </div>
+              <div class="project_inline" id="project_content_1_2015">
+                <a class='inline' href="#project_title_1_2015">Embedded Music Player</a>
+                <br/>
+                <span>Embedded Systems Development</span>
+                <br/>
+                <span>C, HTML, JavaScript</span>
+              </div>
+              <div class="project_inline" id="project_content_2_2015">
+                <a class='inline' href="#project_title_2_2015">Fall Emergency Distress System</a>
+                <br/>
+                <span>Embedded Systems Development</span>
+                <br/>
+                </span>(Capstone Project)</span>
+                <br/>
+                <span>Python, HTML, JavaScript</span>
+              </div>
+              <div class="project_inline" id="project_content_3_2015">
+                <a class='inline' href="#project_title_3_2015">Audify</a>
+                <br/>
+                <span>iOS Apps Development (SFU WEG-WICS Hackathon) </span>
+                <br/>
+                <span>Objective-C</span>
+              </div>
+              <div class="project_inline" id="project_content_4_2015">
+                <a class='inline' href="#project_title_4_2015">Morsecode (Kernel Driver)</a>
+                <br/>
+                <span>Embedded Systems Development (Kernel Driver)</span>
+                <br/>
+                <span>C</span>
+              </div>
+              <div class="project_inline" id="project_content_5_2015">
+                <a class='inline' href="#project_title_5_2015">Process-Ancestor Sys-call</a>
+                <br/>
+                <span>Topic</span>
+                <br/>
+                <span>C</span>
+              </div>
+              <br class="clearBoth" /> 
+            </div>              
+            <!-- Div contains all the details of the project in 2015 -->
+            <div style='display:none'>
+              <div id='project_title_1_2015' style='padding:10px; background:#fff;'>
+                <h2 class="project_box"><strong>Embedded Music Player</strong></h2>
+                  <ul class="project_box_list">
+                    <li>Test</li>
+                    <li>Test</li>
+                    <li>Test</li>
+                  </ul>
+              </div>
+              <div id='project_title_2_2015' style='padding:10px; background:#fff;'>
+                <h2 class="project_box"><strong>Fall Emergency Distress System</strong></h2>
+                  <ul class="project_box_list">
+                    <li>Test</li>
+                    <li>Test</li>
+                    <li>Test</li>
+                  </ul>
+              </div>
+              <div id='project_title_3_2015' style='padding:10px; background:#fff;'>
+                <h2 class="project_box"><strong>Audify - November 2015</strong></h2>
+                <a href="https://bitbucket.org/telunc/audify_release">Link to project on BitBucket</a>
+                  <ul class="project_box_list">
+                    <li>Test</li>
+                    <li>Test</li>
+                    <li>Test</li>
+                  </ul>
+              </div>
+              <div id='project_title_4_2015' style='padding:10px; background:#fff;'>
+                <h2 class="project_box"><strong>Morsecode (Kernel Driver)</strong></h2>
+                  <ul class="project_box_list">
+                    <li>Test</li>
+                    <li>Test</li>
+                    <li>Test</li>
+                  </ul>
+              </div>                          
+            </div>              
             <div id="project_content_2014" hidden>
-              Bye
+              <h3>2014</h3>
             </div>
             <div id="project_content_2013" hidden>
-              Na ge ni
+              <h3>2013</h3>
             </div>                  
           </div>
         </div>
@@ -91,13 +167,23 @@
       <div class="section" id="section4">
         <div class="intro">
           <h1>Resume</h1>
-          <!-- Download Page/Open on new tab -->
+          <!-- 
+            Download Page/Open on new tab
+            Change to image (Tab looking)
+          -->
+          <span>Would like to get to know me better? Feel free to download my resume from the following link:</span>
+          <br/>
+          <br/>
+          <a href="doc/resumeGeneral.pdf" target="_blank">Download</a>
         </div>
       </div>
       <div class="section" id="section5">
         <div class="intro">
           <h1>Contact Me</h1>
-          Would like to chat more? Do not hesiatate to contact me on the following email
+          Would like to talk more? Do not hesiatate to contact me on the following email:
+          <div id="contact_me">
+            <button id="woDeEmail">Show me</button>
+          </div>
         </div>
       </div>
     </div>
