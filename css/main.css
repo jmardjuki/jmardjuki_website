@@ -2,9 +2,16 @@
  *	Custom CSS for jmardjuki's website
  */
 
+
+#cboxOverlay{ 
+	visibility: visible;
+	background-color: black;
+	opacity: 0.80 !important;
+}
+
  /* Section 1: TOP */
 #section1{
-	background-image: url(../image/bg/bg1.JPG);
+	background-image: url(../image/bg/bg10.JPG);
 	background-size: 100% auto;
 	background-repeat:no-repeat;
 }
@@ -34,26 +41,56 @@
     margin-top: 6%;
 }
 .project_box {
-	color: green;
+	color: black;
+	font-size: 150%;
 }
 
 .project_box_list {
 	list-style: circle;
-	color: green;
+	color: black;
 	margin-left: 3%;
 }
 #project_content_2015{
+	float: center;
+}
+.project_top_row{
     display:-webkit-flex;
     -webkit-justify-content:center;
 
     display:flex;
-    justify-content:center;
-
+    justify-content:center;	
 }
+.inline {
+	color: red;
+}
+.project_image {
+	width: 50%;
+	height: auto;
+}
+.project_image_horizontal {
+	width: 30%;
+	height: auto;
+}
+
+#project_image_too_small {
+	width: 80%;
+	height: auto;
+}
+.project_bottom_row{
+	padding-top: 4%;
+    display:-webkit-flex;
+    -webkit-justify-content:center;
+
+    display:flex;
+    justify-content:center;	
+}
+
 div.project_inline { 
     -webkit-flex:1;
     flex:1;
-    /*border:thin solid #777;*/
+}
+.project_date {
+	color: red;
 }
 .clearBoth { 
 	clear:both; 
@@ -62,5 +99,5 @@ div.project_inline {
 	color: green;
 }
 #project_year a:hover{
-	color: black;
+	color: red;
 }

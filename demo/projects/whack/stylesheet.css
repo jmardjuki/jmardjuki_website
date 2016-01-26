@@ -1,0 +1,25 @@
+body {
+    background-color: #d0e4ff;
+}
+
+#holes {
+	vertical-align: top;
+	width: auto;
+	float: left;
+	display: flex;	
+}
+#score {
+	color: #00008A;
+	font-size: 32;
+}
+#scoreDiv {
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+}
+#startDiv{
+}
+img {
+	width: 100px;
+	height: 100px;
+}
