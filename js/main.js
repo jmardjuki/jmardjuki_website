@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#pagepiling').pagepiling({
         menu: '#menu',
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-        sectionsColor: ['black', '#00004d', '#142639', '#2C3E50','#2C3E00' ],
+        sectionsColor: ['black', 'rgb(7, 18, 56)', '#142639','rgb(43, 58, 73)', 'rgb(75, 102, 132)' ],
         navigation: {
             'textColor': 'white',
             'bulletsColor': 'white',
@@ -47,6 +47,8 @@ $(document).ready(function() {
     // Projects Page
     $('#project_sel_2015').css("color", "rgb(200, 78, 25)");  // Default
 
+    var clicked = false;
+
     var oriColour; // Original colour of project select
     $('.project_select').hover(
         function() {
@@ -56,7 +58,12 @@ $(document).ready(function() {
             }            
         },function() {
             if ( oriColour != "rgb(200, 78, 25)" ) {
-                $( this ).css("color", "green");
+                if (!clicked) {
+                    $( this ).css("color", "green");
+                }
+                else {
+                    clicked = false;
+                }
             }
         }    
     );    
@@ -67,7 +74,6 @@ $(document).ready(function() {
         var yearSelected;
 
         $('.project_select').css("color", "green");
-        $(this).css("color", "rgb(200, 78, 25)");
         projectIdArray = projectId.split('_');
         yearSelected =  projectIdArray[2];
         if ( yearSelected == 2015) {
@@ -80,12 +86,9 @@ $(document).ready(function() {
            $('#project_content_2014').show();
            $('#project_content_2013').hide(); 
         }
-        else if ( yearSelected == 2013) {
-           $('#project_content_2015').hide();
-           $('#project_content_2014').hide();
-           $('#project_content_2013').show(); 
-        }
-        // Else do nothing 
+        clicked = true;
+        $(this).css("color", "rgb(200, 78, 25)")
+        // Else do nothing
 
     });
 
@@ -96,7 +99,7 @@ $(document).ready(function() {
         var zhiString = '<span>mardjuki' + '@' + domainNeemu + '</span>';
         var areaCode = '778';
         var theRest = '846';
-        zhiString = zhiString + ' / ' + areaCode + '.' + theRest;
+        zhiString = zhiString + ' / ' + '+1 '+ '(' +areaCode +') ' + theRest + '-1928';
         $('#contact_me').append(zhiString);
 
     });
