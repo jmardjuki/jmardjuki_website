@@ -11,11 +11,16 @@
 
  /* Section 1: TOP */
 #section1{
-	background-image: url(https://farm2.staticflickr.com/1708/24041616614_5c5692819d_o.jpg);
+	background-image: url(http://farm2.staticflickr.com/1501/24492820520_f0973cb6aa_o.jpg);
 	background-size: 100% auto;
 	background-repeat:no-repeat;
 }
-
+#my_name {
+	width: 100%;
+}
+.logo_icon {
+	opacity: 0.7;
+}
 #section1 .intro li {
 	display: inline;
     margin-right: 3px;
@@ -27,7 +32,13 @@
 }
 
 #section1 #logo_text{
-	margin-top: 1%;
+	margin-top: 2%;
+}
+
+/* Section 2: About Me */
+#mae_pic {
+	width: 20%;
+	height: auto;
 }
 
 /* Section 3: Projects */;
@@ -142,5 +153,5 @@ div.project_inline {
 }
 
 #contact_me {
-	margin-top: 1%;
+	margin-top: 2%;
 }

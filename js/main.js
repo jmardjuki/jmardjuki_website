@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('#pagepiling').pagepiling({
         menu: '#menu',
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-        sectionsColor: ['black', 'rgb(7, 18, 56)', '#142639','rgb(43, 58, 73)', 'rgb(75, 102, 132)' ],
+        sectionsColor: ['black', '#071d2c', '#222d39', '#1e4256', 'rgb(75, 102, 132)' ],
         navigation: {
             'textColor': 'white',
             'bulletsColor': 'white',
