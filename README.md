@@ -1,3 +1,4 @@
-# jmardjuki_website
+# [MOVED] jmardjuki_website
 Personal Website
-http://www.sfu.ca/~mardjuki/
+
+Moved to https://github.com/jmardjuki/jmardjuki.github.io
